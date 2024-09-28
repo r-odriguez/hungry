@@ -7,16 +7,6 @@
 
     <style>
      body {
-         display: flex;
-         min-width: 100vw;
-         min-height: 100vh;
-         place-items: center;
-         place-content: center;
-     }
-
-     body {
-         display: flex;
-         flex-direction: column;
          gap: 1rem;
 
          & #form {

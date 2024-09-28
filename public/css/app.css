@@ -9,3 +9,12 @@
 .htmx-request.htmx-indicator{
     display:inline;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}

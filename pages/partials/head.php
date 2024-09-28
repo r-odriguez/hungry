@@ -8,6 +8,7 @@ $scripts ??= [];
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="/css/output.css" />
 
     <!-- js -->
     <script defer type="module" src="/js/libs/htmx.min.js"></script>
