@@ -1,20 +1,22 @@
-.htmx-indicator{
+.htmx-indicator {
     display:none;
 }
-
-.htmx-request .htmx-indicator{
-    display:inline;
-}
-
-.htmx-request.htmx-indicator{
+.htmx-request.htmx-indicator,
+.htmx-request .htmx-indicator {
     display:inline;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    place-items: center;
-    place-content: center;
     min-width: 100vw;
     min-height: 100vh;
+}
+
+ul, li, ol {
+    margin-left: 1rem !important;
+}
+
+li {
+    list-style: disc;
 }

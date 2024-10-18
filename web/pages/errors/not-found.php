@@ -1,3 +1,5 @@
+<?php tusk\http\status\not_found(kill: false); ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,9 +10,3 @@
         <h2>Not Found</h2>
     </body>
 </html>
-
-<?php
-use function tusk\http\status\not_found;
-
-not_found();
-?>

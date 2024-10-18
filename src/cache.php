@@ -5,12 +5,29 @@
  */
 namespace cache;
 
-use function tusk\arrays\filter;
+const restaurants = [
+    ["NameID" => "carranca_gulosa", "Name" => "Carranca Gulosa"],
+    ["NameID" => "lumberjack", "Name" => "Lumberjack"],
+];
 
 function restaurant_search_by_name(string $n)
 {
-    $db = require BASE_PATH . 'db.php';
-    return filter($db, fn ($i) =>
-                  $i['type'] == 'restaurant' &&
-                  $i['name'] == $n);
+    foreach (restaurants as $restaurant) {
+        if ($restaurant["Name"] == $n) {
+            return [$restaurant, null];
+        }
+    }
+
+    return [0, "Restaurant not found"];
+}
+
+function restaurant_search_by(string $field, string $n)
+{
+    foreach (restaurants as $restaurant) {
+        if ($restaurant[$field] == $n) {
+            return [$restaurant, null];
+        }
+    }
+
+    return [0, "Restaurant not found"];
 }
